@@ -8,11 +8,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <NavWrapper/>
+        <Router>
+          <Route exact path='/' component={NavWrapper}/>
+        </Router>
       </header>
-      <Router>
-        <Route />
-      </Router>
     </div>
   );
 }
